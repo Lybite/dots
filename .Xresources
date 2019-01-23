@@ -1,10 +1,6 @@
 URxvt.font: xft:Source Code Pro:size=9
 URxvt.scrollbar: false
 
-! .Xresources
-! author: borysn
-! license: whats a license?
-
 !!!!!!!!!!!!
 ! x config !
 !!!!!!!!!!!!
