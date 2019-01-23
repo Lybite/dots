@@ -1,0 +1,126 @@
+URxvt.font: xft:Source Code Pro:size=9
+URxvt.scrollbar: false
+
+! .Xresources
+! author: borysn
+! license: whats a license?
+
+!!!!!!!!!!!!
+! x config !
+!!!!!!!!!!!!
+
+! Cursor 
+Xcursor.theme : breeze
+Xcursor.size : 24
+
+!!!!!!!!!
+! dzen2 !
+!!!!!!!!!
+
+dzen2.font: noto
+dzen2.foreground: #d66c94
+dzen2.background: #1b123a
+
+!!!!!!!!!
+! URxvt !
+!!!!!!!!!
+
+! general settings
+URxvt.saveLines: 100000
+URxvt.scrollBar: False
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt.scrollstyle: rxvt
+URxvt*termName: rxvt-256color
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: False
+URxvt.iso14755: False
+URxvt.internalBorder: 30
+! urls
+URxvt*depth: 32
+!URxvt.transparent: true
+!URxvt.shading: 10
+
+! extensions
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+URxvt.urlLauncher: xdg-open
+URxvt.urlButton: 1
+URxvt.underlineURLs: True
+
+URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+! keybindings
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Mod4-c: perl:clipboard:copy
+URxvt.keysym.Mod4-v: perl:clipboard:paste
+URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
+!URxvt.keysym.M-c: perl:clipboard:copy
+!URxvt.keysym.M-v: perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-u: perl:url-select:select_next
+
+! font
+URxvt.boldFont: xft:Source Code Pro:pixelsize=9:style=bold:antialias=true:hinting=true
+URxvt.letterSpace: -1
+Xft*dpi: 96
+Xft*antialias: True
+Xft*hinting: Full
+
+!#################################
+! Color settings (Solarized dark)#
+!#################################
+
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+*.foreground:   #e1bcc8
+*.background:   #161219
+*.cursorColor:  #c7c7c7
+
+! black
+*.color0:       #1d2c47
+*.color8:       #1d2c47
+
+! red
+*.color1:       #d2275a
+*.color9:       #ff2f6d
+
+! green
+*.color2:       #8752ba
+*.color10:      #b66efb
+
+! yellow
+*.color3:       #e15581
+*.color11:      #fb5f90
+
+! blue
+*.color4:       #1e59aa
+*.color12:      #2c84fc
+
+! magenta
+*.color5:       #8752ba
+*.color13:      #b56efa
+
+! cyan
+*.color6:       #4b76b8
+*.color14:      #67a2fd
+
+! white
+*.color7:       #e95986
+*.color15:      #fb89ad
+ 
+
+URxvt*transparent: true
+urxvt*shading: 30
+
+
+
